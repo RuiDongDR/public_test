@@ -57,7 +57,7 @@ cd /home/ubuntu/handson-tutorials/contents/
 
 while true; do
     export JUPYTER_CONFIG_DIR=$HOME/.jupyter
-    jupyter-lab --notebook-dir=/home/ubuntu/
+    jupyter-lab --notebook-dir=/home/ubuntu/handson-tutorials/contents/
     # Check if jupyter-lab exited with a non-zero exit code
     if [ $? -ne 0 ]; then
         echo "[$(date)]: Jupyter Lab crashed, restarting..."
