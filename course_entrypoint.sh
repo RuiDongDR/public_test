@@ -53,7 +53,7 @@ for folder in /home/ubuntu/handson-tutorials/contents/*/; do
   fi
 done
 
-cd /home/ubuntu/handson-tutorials/contents/
+cd /home/ubuntu/
 
 while true; do
     export JUPYTER_CONFIG_DIR=$HOME/.jupyter
