@@ -53,11 +53,11 @@ for folder in /home/ubuntu/handson-tutorials/contents/*/; do
   fi
 done
 
-cd /home/ubuntu/
+cd /home/ubuntu/handson-tutorials/contents/
 
 while true; do
     export JUPYTER_CONFIG_DIR=$HOME/.jupyter
-    jupyter-lab --notebook-dir=/home/ubuntu/handson-tutorials/contents/
+    jupyter-lab --notebook-dir=/home/ubuntu/
     # Check if jupyter-lab exited with a non-zero exit code
     if [ $? -ne 0 ]; then
         echo "[$(date)]: Jupyter Lab crashed, restarting..."
